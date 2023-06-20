@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/giftcard.css">
+    <script src="https://kit.fontawesome.com/ad6343f94b.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+           <img class="logo" src="img/logo.png" alt="">
+           <form class="buscador" action="#" method="get" enctype="application/x-www-form-urlencoded " autocomplete="off" novalidate>
+               <input class="buscador" type="search" name="cursos" list="cursos">
+               <datalist id="cursos">
+                    <option value="Html">
+                    <option value="JavaScript">
+                    <option value="CSS">
+                    <option value="Java">
+                    <option value="Python">
+                    <option value="Sql">    
+               </datalist>
+           </form>
+           <div class="carrito_container">
+                <i class="fa-sharp fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                <p>0</p>            
+           </div>
+        </nav>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="giftcard.html">Gift Card</a></li>
+            <li><a href="inscripcion.html">Inscripcion</a></li>
+            <li><a href="proximos-cursos.html">Proximos cursos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="imagen">
+            <div class="imagen_parte_arriba">
+                <p class="gift_card_para">Gift card para</p>
+                <p class="DESTINATARIO">DESTINATARIO</p>
+                <p class="numerito">$000.-</p>
+            </div>
+            <div class="ultimo_texto_img">
+                <p>VISTA PREVIA DEL RESULTADO</p>
+                <p>DE PERSONALIZACION</p>
+            </div>
+        </section>
+        
+        <section class="PersonalizacionGiftCard">
+            <form class="formulario_giftcard" action="#" method="get" enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+                <h2 class="titulo">Personalizacion de Gift Card</h2>
+                
+                <input class="nombre" type="text" id="Nombre" name="Nombre" required placeholder="Nombre Destinatario" autofocus>
+                </br><br>   
+                 
+                <label class="color1" for="">Color</label>
+                <br>
+
+                <div class="Fondo_gift">
+                    <div class="div_flex"><p class="negro"></p><input class="punto_color" type="radio" name="color" id="color"></div>
+                    <div class="div_flex"><p class="blanco"></p><input class="punto_color" type="radio" name="color" id="color"></div>
+                    <div class="div_flex"><p class="rojo"></p><input class="punto_color_rojo" type="radio" name="color" id="color"></div>
+                    <div class="div_flex"><p class="gris"></p><input class="punto_color" type="radio" name="color" id="color"></div>
+                    <div class="div_flex"><p class="azul"></p><input class="punto_color" type="radio" name="color" id="color"></div>
+                </div>
+                
+                <label class="tamaño_fuente" for="Tamaño de la fuente">Tamaño de la fuente</label>
+                <br>
+
+                   <div class="tamaño_fuente_gift">
+                        <div class="div_flex"><p class="t20px">20px</p><input class="tmñ_fuenter" type="radio" name="fuente" id="20px"></div>
+                        <div class="div_flex"><p class="t28px">28px</p><input class="tmñ_fuenter" type="radio" name="fuente" id="28px"></div>
+                        <div class="div_flex"><p class="t32px">32px</p><input class="tmñ_fuenter" type="radio" name="fuente" id="32px"></div>
+                        <div class="div_flex"><p class="t48px">48px</p><input class="tmñ_fuenter" type="radio" name="fuente" id="48px"></div>
+                        <div class="div_flex"><p class="t60px">60px</p><input class="tmñ_fuenter" type="radio" name="fuente" id="60px"></div>
+                    </div> 
+                <br>
+
+                <label class="monto" for="">Monto $</label>
+                <input class="monto" type="text" name="monto" id="monto" min="1000" max="10000">  
+                <br><br>
+
+                <label class="ubicacion" for="">Ubicación</label>
+                <br>
+                <div class="ubicacion_container">
+                    <div class="div_ubicacion">
+                        <div class="miniatura">
+                            <div class="miniatura_noreste"></div>
+                        </div>
+                        <input type="radio" name="ubicacion" id="noreste">
+                    </div>
+                    <div class="div_ubicacion">
+                        <div class="miniatura">
+                            <div class="miniatura_sureste"></div>
+                        </div>
+                        <input type="radio" name="ubicacion" id="sureste">
+                    </div>
+                    <div class="div_ubicacion">
+                        <div class="miniatura">
+                            <div class="miniatura_suroeste"></div>
+                        </div>
+                        <input type="radio" name="ubicacion" id="suroeste">
+                    </div>
+                </div>
+
+                <label class="fondo_texto" for="">Fondo</label>
+                <br>
+
+                <div class="Fondo_gift">
+                    <div class="div_flex"><p class="negro2"></p><input class="punto_color" type="radio" name="fondo" id="negro"></div>
+                    <div class="div_flex"><p class="blanco2"></p><input class="punto_color"type="radio" name="fondo" id="blanco"></div>
+                    <div class="div_flex"><p class="rojo2"></p><input class="punto_color"type="radio" name="fondo" id="rojo"></div>
+                    <div class="div_flex"><p class="gris2"></p><input class="punto_color"type="radio" name="fondo" id="gris"></div>
+                    <div class="div_flex"><p class="azul2"></p><input class="punto_color"type="radio" name="fondo" id="azul"></div>
+                </div>
+
+                <input class="boton_ultimo_texto" value="Confirmar" type="submit" name="CONFIRMAR" id="SI"> 
+
+                <br>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="datos_grupo">
+            <p>Attino Tomas - DNI 41399186</p>
+            <p>Croci Gian - DNI 40767286</p>
+        </div>
+        <ul class="menu_inferior">
+            <li><a href="politicas.html">Politicas de privacidad</a></li>
+            <li>Cancelacion de compra</li>
+            <li>Data fiscal</li>
+        </ul>
+        <ul class="redes_sociales">
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li>
+            <li><a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a></li>
+        </ul>
+    </footer>
+    <script src="js/giftcard.js"></script>
+</body>
+</html>

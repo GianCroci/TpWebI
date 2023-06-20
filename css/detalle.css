@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(11,6,92);
+    background: linear-gradient(180deg, rgba(11,6,92,1) 0%, rgba(121,9,100,1) 0%, rgba(81,9,190,1) 100%);
+}
+
+/*----------------------------------------------------HEADER--------------------------------------------------*/
+
+.nav{
+    width: 100%;
+    background: rgb(17,15,42);
+    background: linear-gradient(90deg, rgba(17,15,42,1) 0%, rgba(92,14,91,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    
+    height: 45px;
+    margin: 10px 0 10px 15px;
+}
+.buscador_container{
+    margin-left: -100px;
+    
+}
+.buscador{
+    background-color: #bbb;
+    background-image: url(../img/lupa.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 5px;
+}
+input:focus{
+    background-image: none;
+}
+input:hover{
+    background-image: none;
+}
+
+.carrito_container{
+   width: 50px;
+   height: 50px;
+   position: relative;
+   top: 12px;
+   right: 26px;
+}
+
+.carrito_container i{
+    font-size: 30px;
+    left: 15px;
+    position: absolute;
+}
+.carrito_container p{
+    position: absolute;
+    font-weight: bold;
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    top: -15px;
+    right: -5px;
+}
+
+.menu{
+    font-size: 20px;
+    background: rgb(17,15,42);
+    background: linear-gradient(90deg, rgba(17,15,42,1) 0%, rgb(92, 14, 91) 100%);
+    text-align: center;
+    line-height: 2;
+    display: flex;
+    justify-content: space-around;
+    padding-inline-start: 0px;
+    border-bottom: 2px solid #000;
+}
+.menu li:hover{
+   scale: 1.2;
+}
+
+.menu li{
+    flex-basis: 25%;
+    transition-property: all;
+    transition-duration: .5s;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: .5s;
+}
+a:visited{
+    color: #fff;
+}
+
+/*---------------------------------------------MAIN-----------------------------------------------*/
+
+main{
+    margin: 30px 0;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.detalle_container{
+    width: 100%;
+    display: flex;
+    margin: 20px auto;
+}
+
+.img_curso{
+    flex-basis: 30%;
+    width: 200px;
+    height: 200px;
+    margin-right: 50px;
+    border: 2px solid #000; 
+}
+
+.descripcion_container{
+    flex-basis: 70%;
+    width: 50%;
+}
+
+.descripcion_container h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.descripcion_container h3{
+    margin: 5px 5px 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.inline{
+    display: inline-block;
+}
+.descripcion_container p{
+    font-size: 15px;
+}
+.descripcion {
+    text-align: start;
+    width: 55%;
+}
+.unidad{
+    list-style: none;
+    border: .5px solid #000;
+    text-align: center;
+}
+.unidad h4{
+    margin: 6px 6px;
+}
+ul{
+    padding-inline-start: 0px;
+}
+.container{
+    width: 340px;  
+    background-color: #bbb;
+    border: 2px solid #000;
+}
+.temario{
+  width: 100%;
+  background-color: #eee;  
+  display: none;  
+}
+.clase{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: .5px solid #000;
+    padding: 8px 2px;
+}
+.fa-circle-play{
+    font-size: 15px;
+    margin-left: 4px;
+}
+.titulo_seccion{
+    font-size: 15px;
+}
+.fa-clock, .tiempo_seccion{
+    font-size: 12px;
+    opacity: .7;
+}
+.clase a{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin-right: 3px;
+    border: 1px solid #000;
+  }
+  .clase a:visited{
+    background-color: #11ad26;
+  }
+
+.unidad:hover > .temario{
+    display: block;
+}
+.descripcion_container button{
+    font-weight: bold;
+    margin: 10px 0;
+    background-color: #333;
+    border-radius: 8px;
+    padding: 5px 8px;
+}
+.descripcion_container button a{
+    color: #ddd;
+}
+
+.docente{
+    margin-bottom: 8px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+.docente_container{
+    width: 100%;
+    margin: auto;
+    background-color: #790964;
+    display: flex;
+    border: 2px solid #000;
+}
+.docente_img{
+    width: 70px;
+    height: 120px;
+    flex-basis: 15%;
+    margin: 15px 20px 15px 15px;
+    border-radius: 50%;
+}
+.docente_container div{
+    flex-basis: 85%;
+}
+.nombre_docente{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+.docente_container div img{
+    width: 200px;
+    margin-bottom: 10px;
+}
+.docente_container div p{
+    font-size: 18px;
+    padding: 0 15px 15px 0;
+}
+.titulo_cursos_relacionados{
+    text-align: center;
+    font-size: 35px;
+    margin: 10px 0;
+    color: #fff;
+}
+.cursos_relacionados{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.cursos_container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.img_curso_container{
+    flex-basis: 250px;
+    height: 312px;
+    margin: 25px;
+    position: relative;
+    background: rgb(11,6,92);
+    background: linear-gradient(180deg, rgba(81,9,190,1) 0%, rgb(121, 9, 100) 0%, rgba(11,6,92,1) 100%);
+    border: 2px solid #000;
+    transition: all;
+    transition-duration: .2s;
+    text-align: center;
+}
+@media screen and (min-width: 1500px){
+    .img_curso_container{
+        flex-basis: 300px;
+    }
+}
+.img_curso_container img{
+    width: 80%;  
+    height: 180px;
+    margin-top: 23px;
+}
+.precio{
+    position: absolute;
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    bottom: 95px;
+    right: 15px;
+}
+.horas{
+    position: absolute;
+    color: #fff;
+    bottom: 77px;
+    left: 24px;
+    font-size: 20px;
+}
+.nombre_curso{
+    position: absolute;
+    color: #fff;
+    bottom: 63px;
+    right: 25px;
+    font-size: 25px;
+}
+.ver_detalle{
+    position: absolute;
+    right: 11px;
+    bottom: 47px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+.img_curso_container button{
+    position: absolute;
+    right: 7px;
+    bottom: 15px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: #bbb;
+}
+
+
+
+
+/*----------------------------------------------------FOOTER------------------------------------------*/
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(17,15,42);
+    background: linear-gradient(90deg, rgba(17,15,42,1) 0%, rgba(92,14,91,1) 100%);
+    align-items: center;
+    padding: 10px 30px;
+    border-top: 4px solid #000;
+}
+
+li{
+    list-style: none;
+}
+.datos_grupo p{
+    padding: 4px 0;
+    font-size: 17px;
+    color: #fff;
+}
+.menu_inferior li{
+    position: relative;
+    padding: 4px 0;
+    font-size: 17px;
+    left: -35px;
+    color: #fff;
+}
+.redes_sociales li{
+    position: relative;
+    font-size: 20px;
+    padding: 3px 0;
+    left: -35px;
+    color: #fff;
+}
+

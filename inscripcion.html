@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/inscripcion.css">
+    <script src="https://kit.fontawesome.com/ad6343f94b.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+           <img class="logo" src="img/logo.png" alt="">
+           <form class="buscador" action="#" method="get" enctype="application/x-www-form-urlencoded " autocomplete="off" novalidate>
+               <input class="buscador" type="search" name="cursos" list="cursos">
+               <datalist id="cursos">
+                    <option value="Html">
+                    <option value="JavaScript">
+                    <option value="CSS">
+                    <option value="Java">
+                    <option value="Python">
+                    <option value="Sql">    
+               </datalist>
+           </form>
+           <div class="carrito_container">
+                <i class="fa-sharp fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                <p>0</p>            
+           </div>
+        </nav>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="giftcard.html">Gift Card</a></li>
+            <li><a href="inscripcion.html">Inscripcion</a></li>
+            <li><a href="proximos-cursos.html">Proximos cursos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <article>
+            <form id="form" method="get" enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>  
+            <section class="titulos"> 
+               <h1 class="titulo1">INSCRIPCIÓN</h1>
+              <h2 class="titulo2">Completá tus datos</h2>  
+            </section>
+
+            <section class="formulario">
+                
+                <div class="bloques">
+                        <input class="primer_b" type="text" name="nombre" id="nombre" placeholder="Apellido y nombre" required>
+                        <input class="primero_c" type="email" name="email" id="email" placeholder="Usuario123@gmail.com" required>
+                        <input class="primero_d" type="text" name="curso" id="curso"placeholder="Nombre del curso" required>  
+                        <div class="container_menos">
+                            <i class="fa-solid fa-minus" style="color: #ffffff;"></i>
+                        </div>
+                </div>   
+                
+            </section>
+          
+            <section class="container_agregar">   
+                <button class="icono_container">
+                    <i class="fa-solid fa-plus" style="color: #fff;"></i>
+                </button>
+                    <p class="agregar_persona">Agregar Persona</p>
+            </section>
+
+            <section class="ultimo_boton">
+                    <h4 class="importe_final">$000.-</h4>
+                    <input class="inscribirme_boton" type="submit" value="Inscribirse" name="INSCRIBIRME" id="SI">
+            </section>
+        </form>
+        </article>
+       
+    </main>
+    <footer>
+        <div class="datos_grupo">
+            <p>Attino Tomas - DNI 41399186</p>
+            <p>Croci Gian - DNI 40767286</p>
+        </div>
+        <ul class="menu_inferior">
+            <li><a href="politicas.html">Politicas de privacidad</a></li>
+            <li>Cancelacion de compra</li>
+            <li>Data fiscal</li>
+        </ul>
+        <ul class="redes_sociales">
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li>
+            <li><a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a></li>
+        </ul>
+    </footer>
+    <script src="js/inscripcion.js"></script>
+</body>
+</html>

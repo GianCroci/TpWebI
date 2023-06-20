@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(11,6,92);
+    background: linear-gradient(180deg, rgba(11,6,92,1) 0%, rgba(121,9,100,1) 0%, rgba(81,9,190,1) 100%);
+}
+
+/*----------------------------------------------------HEADER--------------------------------------------------*/
+
+.nav{
+    width: 100%;
+    background: rgb(17,15,42);
+    background: linear-gradient(90deg, rgba(17,15,42,1) 0%, rgba(92,14,91,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    
+    height: 45px;
+    margin: 10px 0 10px 15px;
+}
+.buscador_container{
+    margin-left: -100px;
+    
+}
+.buscador{
+    background-color: #bbb;
+    background-image: url(../img/lupa.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 5px;
+}
+input:focus{
+    background-image: none;
+}
+input:hover{
+    background-image: none;
+}
+
+.carrito_container{
+   width: 50px;
+   height: 50px;
+   position: relative;
+   top: 12px;
+   right: 26px;
+}
+
+.carrito_container i{
+    font-size: 30px;
+    left: 15px;
+    position: absolute;
+}
+.carrito_container p{
+    position: absolute;
+    font-weight: bold;
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    top: -15px;
+    right: -5px;
+}
+
+.menu{
+    font-size: 20px;
+    background: rgb(17,15,42);
+    background: linear-gradient(90deg, rgba(17,15,42,1) 0%, rgb(92, 14, 91) 100%);
+    text-align: center;
+    line-height: 2;
+    display: flex;
+    justify-content: space-around;
+    padding-inline-start: 0px;
+    border-bottom: 2px solid #000;
+}
+.menu li:hover{
+   scale: 1.2;
+}
+
+.menu li{
+    flex-basis: 25%;
+    transition-property: all;
+    transition-duration: .5s;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: .5s;
+}
+a:visited{
+    color: #fff;
+}
+/*----------------------------------------------------MAIN--------------------------------------------*/
+
+main{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;    
+}
+
+.imagen{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.numerito{
+    background-color: #000;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+}
+.gift_card_para{
+    text-align: center;
+    padding-top: 80px;
+}
+.DESTINATARIO{
+    font-family: cursive;
+    font-size: x-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+.imagen_parte_arriba{
+    border: ridge;
+    height: 296px;  
+    width: 350;
+    background-color: gray;
+    position: relative;
+}
+
+.parte_arriba_img{
+    background-color: #555;
+    height: 280px;
+    width: 300px;
+}
+.ultimo_div{
+    margin-top: 10px;
+}
+.ultimo_texto_img{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+}
+
+.PersonalizacionGiftCard{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    right: 20;
+    margin-left: 30px;
+}
+
+
+.titulo{
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-bottom: 10;
+}
+
+.color1{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tamaño_fuente{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.formulario_giftcard{
+    position: relative;
+    right: 40;
+
+}
+
+.barra1{
+    
+    background-color: red;
+    height: 15px;
+    border: solid;
+
+}
+
+.nombre{
+    margin: auto;
+    border: solid;
+    margin-top: 5px;
+}
+
+.monto{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+   
+}
+
+.fondo_Texto{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Fondo_gift{
+    align-items: center;
+    display: flex;
+    width: 50px;
+}
+.tamaño_fuente{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tamaño_fuente_gift{
+    align-items: center;
+    display: flex;
+    width: 50px;
+    font-family: math;
+    text-align: center;
+    font-weight: bold;
+}
+
+.t20px{
+    font-size: 12px;
+}
+.t28px{
+    font-size: 14px;
+}
+.t32px{
+    font-size: 16px;
+}
+.t48px{
+    font-size: 18px;
+}
+.t60px{
+    font-size: 20px;
+}
+
+.div_flex{
+    margin: 10px;
+}
+
+.punto_color{
+    margin-left: 15px;
+}
+.negro{
+    border-radius: 50%;
+    background-color: black;
+    width: 40px;
+    height: 40;
+    margin-bottom: 10px;
+    border:solid;
+}
+.blanco{
+    border-radius: 50%;
+    background-color: white;
+    width: 40px;
+    height: 40;
+    margin-bottom: 10px;
+    border:solid;
+}
+.rojo{
+    border-radius: 50%;
+    background-color: red;
+    width: 40px;
+    height: 40;
+    margin-bottom: 10px;
+    border:solid;
+}
+.gris{
+    border-radius: 50%;
+    background-color: gray;
+    width: 40px;
+    height: 40;
+    margin-bottom: 10px;
+    border:solid;
+}
+.azul{
+    border-radius: 50%;
+    background-color: blue;
+    width: 40px;
+    height: 40;
+    margin-bottom: 10px;
+    border:solid;
+}
+.ubicacion{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.ubicacion_container{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.div_ubicacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: start;
+}
+.miniatura{
+    width: 30px;
+    height: 20px;
+    background-color: #ccc;
+    position: relative;
+    margin: 5px 0;
+}
+.miniatura_noreste{
+    width: 12px;
+    height: 8px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.miniatura_sureste{
+    width: 12px;
+    height: 8px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.miniatura_suroeste{
+    width: 12px;
+    height: 8px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.negro2{
+    border-radius: initial;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    border:solid;
+}
+
+.blanco2{
+    border-radius: initial;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    border:solid;
+}
+
+.rojo2{
+    border-radius: initial;
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    border:solid;
+}
+.gris2{
+    border-radius: initial;
+    background-color: grey;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    border:solid;
+}
+
+.azul2{
+    border-radius: initial;
+    background-color: blue;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    border:solid;
+}
+.boton_ultimo_texto{
+    font-weight: bold;
+    font-size: 15;
+    color: white;
+    font-family: system-ui;
+    background-color: #000;
+}
+
+.fuente_rojo{
+    color: #ff0000;
+}
+
+/*--------------------------------------------------------FOOTER--------------------------------------------*/
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(17,15,42);
+    background: linear-gradient(90deg, rgba(17,15,42,1) 0%, rgba(92,14,91,1) 100%);
+    align-items: center;
+    padding: 10px 30px;
+    border-top: 4px solid #000;
+}
+
+li{
+    list-style: none;
+}
+.datos_grupo p{
+    padding: 4px 0;
+    font-size: 17px;
+    color: #fff;
+}
+.menu_inferior li{
+    position: relative;
+    padding: 4px 0;
+    font-size: 17px;
+    left: -35px;
+    color: #fff;
+}
+.redes_sociales li{
+    position: relative;
+    font-size: 20px;
+    padding: 3px 0;
+    left: -35px;
+    color: #fff;
+}

@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(11,6,92);
+    background: linear-gradient(180deg, rgba(11,6,92,1) 0%, rgba(121,9,100,1) 0%, rgba(81,9,190,1) 100%);
+}
+
+/*----------------------------------------------------HEADER--------------------------------------------------*/
+
+.nav{
+    width: 100%;
+    background: rgb(17,15,42);
+    background: linear-gradient(90deg, rgba(17,15,42,1) 0%, rgba(92,14,91,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    
+    height: 45px;
+    margin: 10px 0 10px 15px;
+}
+.buscador_container{
+    margin-left: -100px;
+    
+}
+.buscador{
+    background-color: #bbb;
+    background-image: url(../img/lupa.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 5px;
+}
+input:focus{
+    background-image: none;
+}
+input:hover{
+    background-image: none;
+}
+
+.carrito_container{
+   width: 50px;
+   height: 50px;
+   position: relative;
+   top: 12px;
+   right: 26px;
+}
+
+.carrito_container i{
+    font-size: 30px;
+    left: 15px;
+    position: absolute;
+}
+.carrito_container p{
+    position: absolute;
+    font-weight: bold;
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    top: -15px;
+    right: -5px;
+}
+
+.menu{
+    font-size: 20px;
+    background: rgb(17,15,42);
+    background: linear-gradient(90deg, rgba(17,15,42,1) 0%, rgb(92, 14, 91) 100%);
+    text-align: center;
+    line-height: 2;
+    display: flex;
+    justify-content: space-around;
+    padding-inline-start: 0px;
+    border-bottom: 2px solid #000;
+}
+.menu li:hover{
+   scale: 1.2;
+}
+
+.menu li{
+    flex-basis: 25%;
+    transition-property: all;
+    transition-duration: .5s;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: .5s;
+}
+a:visited{
+    color: #fff;
+}
+
+/*----------------------------------------------------MAIN------------------------------------------*/
+
+.slider_container{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+.slider{
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  border-bottom: 4px solid #000;
+}
+.flechas_container{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flechas_container img{
+    width: 50px;
+}
+
+.pasos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pasos img{
+    width: 200px;
+    margin: 30px 0;
+    border: 2px solid #000;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+}
+
+.cursos_container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.img_curso_container{
+    flex-basis: 250px;
+    height: 312px;
+    margin: 25px;
+    position: relative;
+    background: rgb(11,6,92);
+    background: linear-gradient(180deg, rgba(81,9,190,1) 0%, rgba(121,9,100,1) 0%, rgba(11,6,92,1) 100%);
+    border: 2px solid #000;
+    transition: all;
+    transition-duration: .4s;
+    text-align: center;
+}
+@media screen and (min-width: 1500px){
+    .img_curso_container{
+        flex-basis: 300px;
+    }
+}
+.img_curso_container:hover >  img {
+    opacity: .7;   
+}
+.img_curso_container:hover{
+    scale: 1.1;
+}
+.img_curso_container img{
+    width: 80%;  
+    height: 180px;
+    margin-top: 23px;
+}
+.precio{
+    position: absolute;
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    bottom: 95px;
+    right: 15px;
+}
+.horas{
+    position: absolute;
+    color: #fff;
+    bottom: 77px;
+    left: 24px;
+    font-size: 20px;
+}
+.nombre_curso{
+    position: absolute;
+    color: #fff;
+    bottom: 63px;
+    right: 25px;
+    font-size: 25px;
+}
+.ver_detalle{
+    position: absolute;
+    right: 11px;
+    bottom: 47px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+.img_curso_container button{
+    position: absolute;
+    right: 7px;
+    bottom: 15px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: #bbb;
+}
+.img_curso_container a:hover{
+    color: #4e4eb0;
+}
+.img_curso_container button a:hover{
+    color: #ddd;
+}
+.ver_detalle:visited{
+    color: #fff
+}
+
+.medios_de_pago{
+    text-align: center;
+    font-size: 50px;
+    margin: 25px 0;
+    color: #fff;
+}
+.pagos_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.izquierda {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    z-index: 10;
+}
+.img_medios{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.img_medios img{
+    width: 100px;
+    height: 70px;
+    border: 2px solid #000;
+}
+.derecha {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+/*------------------------------------------------------MAIN----------------------------------------------*/
+main{
+    min-height: 70%;
+}
+
+
+
+
+
+/*-------------------------------------------------------FOOTER----------------------------------------------*/
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(17,15,42);
+    background: linear-gradient(90deg, rgba(17,15,42,1) 0%, rgba(92,14,91,1) 100%);
+    align-items: center;
+    padding: 10px 30px;
+    border-top: 4px solid #000;
+}
+
+li{
+    list-style: none;
+}
+.datos_grupo p{
+    padding: 4px 0;
+    font-size: 17px;
+    color: #fff;
+}
+.menu_inferior li{
+    position: relative;
+    padding: 4px 0;
+    font-size: 17px;
+    left: -35px;
+    color: #fff;
+}
+.redes_sociales li{
+    position: relative;
+    font-size: 20px;
+    padding: 3px 0;
+    left: -35px;
+    color: #fff;
+}
+
+
